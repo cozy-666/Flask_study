@@ -6,12 +6,12 @@ def index():
     books = [
         {
         'title': 'はらぺこあおむし',
-        'price:': 1200,
+        'price': 1200,
         'arrival_day': '2026年2月1日'
         },
         {
         'title': 'グリとグラ',
-        'price:': 950,
+        'price': 950,
         'arrival_day': '2026年2月2日'
         },       
     ]
