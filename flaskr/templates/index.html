@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <p>ようこそ、{{ name }}さん！</p>
+    
+    <form action="/greet" method="POST">
+        <input type="text" name="username" placeholder="名前を入力">
+        <button type="submit">送信</button>
+    </form>
+</body>
+</html>
