@@ -5,12 +5,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>{{ title }}</h1>
-    <p>ようこそ、{{ name }}さん！</p>
-    
-    <form action="/greet" method="POST">
-        <input type="text" name="username" placeholder="名前を入力">
-        <button type="submit">送信</button>
-    </form>
+    <h1>サプー書店</h1>
+    <h2>今月の新刊一覧</h2>
+    <p>タイトル：{{ book.title }}</p>
+    <p>金額：{{ book.price }}</p>
+    <p>入荷日：{{ book.arrival_day }}</p>
 </body>
 </html>
